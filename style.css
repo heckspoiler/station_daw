@@ -57,6 +57,8 @@ header nav {
       width: 100%;
       padding: 1rem 2rem 1rem 2rem;
       display: flex;
+      justify-content: space-between;
+      align-items: center;
 }
 
 header .navbar__left {
@@ -129,4 +131,27 @@ header a:hover {
       display: flex;
       justify-content: center;
       align-items: center;
+}
+
+.navbar__right {
+      display: flex;
+      gap: 35px;
+      align-items: center;
+
+
+}
+
+.navbar__right a {
+
+      width: 8rem;
+      text-align: center;
+}
+
+.navbar__right a:first-of-type {
+      color: #0000ff;
+      margin-right: 2rem;
+}
+
+.navbar__right a:not(:first-of-type) {
+      font-size: 0.8rem;
 }
