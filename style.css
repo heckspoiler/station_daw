@@ -1,0 +1,90 @@
+/* imports */
+
+@font-face {
+      font-family: 'Gosha Bold';
+      src: url('./assets/fonts/GoshaSans-Bold.otf');
+
+}
+
+@font-face {
+      font-family: 'Gosha Regular';
+      src: url('./assets/fonts/GoshaSans-Regular.otf');
+
+}
+
+
+@font-face {
+      font-family: 'BDO Grotesk Light';
+      src: url('./assets/fonts/BDOGrotesk-Light.ttf');
+
+}
+
+@font-face {
+      font-family: 'BDO Grotesk Medium';
+      src: url('./assets/fonts/BDOGrotesk-Medium.ttf');
+
+}
+
+
+/* reset */
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+/* general styling */
+
+h1 {
+      font-family: "Gosha Bold", sans-serif;
+      font-size: 2rem;
+}
+
+h2 {
+      font-family: "Gosha Bold", sans-serif;
+      font-size: 1.5rem;
+}
+
+body {
+      font-family: "BDO Grotesk Light", sans-serif;
+}
+
+/* nav bar styling */
+
+header nav {
+      height: 4.3rem;
+      width: 100%;
+      border-bottom: 1px solid black;
+      padding: 1rem 2rem 1rem 2rem;
+      display: flex;
+}
+
+header .navbar__left {
+      display: flex;
+      gap: 35px;
+      align-items: center;
+}
+
+header a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.2rem;
+      transition: all 0.3s ease-in-out;
+      width: 4rem;
+}
+
+header a:hover {
+      color: #0000ff;
+      font-family: "BDO Grotesk Medium"
+
+}
+
+.logo {
+      height: 4rem;
+      width: 4rem;
+      margin-top: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
