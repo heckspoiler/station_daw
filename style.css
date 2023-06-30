@@ -37,8 +37,8 @@
 /* general styling */
 
 h1 {
-      font-family: "Gosha Bold", sans-serif;
-      font-size: 2rem;
+      font-family: "BDO Grotesk Medium", sans-serif;
+      font-size: 2.5rem;
 }
 
 h2 {
@@ -154,4 +154,38 @@ header a:hover {
 
 .navbar__right a:not(:first-of-type) {
       font-size: 0.8rem;
+}
+
+
+/* hero section styling */
+.hero-section__upper-left {
+
+      width: 55rem;
+      height: 35rem;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background-image: url("./assets/home/images/hero-section-image-left.avif");
+      background-size: cover;
+}
+
+.hero-section__upper-left h1,
+.hero-section__upper-left p {
+      color: #fdf900;
+      mix-blend-mode: overlay;
+}
+
+.hero-section__upper-left h1 {
+      margin-top: 4rem;
+      margin-left: 4rem;
+      letter-spacing: -2px;
+      font-size: 3rem;
+}
+
+.hero-section__upper-left p {
+      margin-left: 4rem;
+      text-decoration: solid underline;
+      font-family: "BDO Grotesk Medium";
+      letter-spacing: -0.5px;
+      font-size: 1.2rem;
 }
