@@ -75,7 +75,7 @@ header a {
       text-align: center;
 }
 
-header a:last-of-type::before {
+.navbar__left a:last-of-type::before {
       content: "";
       position: absolute;
       margin-left: 3.55rem;
@@ -88,7 +88,7 @@ header a:last-of-type::before {
       transform: rotate(0deg);
 }
 
-header a:last-of-type::after {
+.navbar__left a:last-of-type::after {
       content: "";
       position: absolute;
       margin-left: 0.8rem;
@@ -101,17 +101,17 @@ header a:last-of-type::after {
       transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-header a:last-of-type:hover::before,
-header a:last-of-type:hover::after {
+.navbar__left a:last-of-type:hover::before,
+.navbar__left a:last-of-type:hover::after {
       background-color: #0000ff;
 
 }
 
-header a:last-of-type:hover::before {
+.navbar__left a:last-of-type:hover::before {
       transform: rotate(90deg);
 }
 
-header a:last-of-type:active::before {
+.navbar__left a:last-of-type:active::before {
       transform: rotate(90deg);
 }
 
@@ -119,8 +119,7 @@ header a:last-of-type:active::before {
 
 
 header a:hover {
-      color: #0000ff;
-
+      color: #f77737;
 }
 
 .logo {
