@@ -50,12 +50,11 @@ body {
       font-family: "BDO Grotesk Light", sans-serif;
 }
 
-/* nav bar styling */
+/* navbar styling */
 
 header nav {
       height: 4.3rem;
       width: 100%;
-      border-bottom: 1px solid black;
       padding: 1rem 2rem 1rem 2rem;
       display: flex;
 }
@@ -69,14 +68,58 @@ header .navbar__left {
 header a {
       text-decoration: none;
       color: black;
-      font-size: 1.2rem;
-      transition: all 0.3s ease-in-out;
+      font-size: 1.1rem;
+      transition: color 0.3s ease-in-out;
+      font-family: "BDO Grotesk Medium";
       width: 4rem;
+      text-align: center;
 }
+
+header a:last-of-type::before {
+      content: "";
+      position: absolute;
+      margin-left: 3.55rem;
+      margin-top: 0.45rem;
+      width: 0.14rem;
+      height: 0.8rem;
+      background-color: black;
+      margin-right: 1rem;
+      transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+      transform: rotate(0deg);
+}
+
+header a:last-of-type::after {
+      content: "";
+      position: absolute;
+      margin-left: 0.8rem;
+      transform: rotate(90deg);
+      margin-top: 0.45rem;
+      width: 0.14rem;
+      height: 0.8rem;
+      background-color: black;
+      margin-right: 1rem;
+      transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+header a:last-of-type:hover::before,
+header a:last-of-type:hover::after {
+      background-color: #0000ff;
+
+}
+
+header a:last-of-type:hover::before {
+      transform: rotate(90deg);
+}
+
+header a:last-of-type:active::before {
+      transform: rotate(90deg);
+}
+
+
+
 
 header a:hover {
       color: #0000ff;
-      font-family: "BDO Grotesk Medium"
 
 }
 
