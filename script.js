@@ -71,25 +71,26 @@ const heroParaHover = (para) => {
 // scrollIndicator timeout appear
 
 setTimeout(() => {
-  scrollIndicator.style.marginTop = "-15vh";
+  scrollIndicator.style.transform = "translateY(1rem)";
 }, 2000);
 
 //scrollIndicator hover state change
 
 scrollIndicator.addEventListener("mouseover", () => {
   scrollIndicator.classList.toggle("scroll-indicator-movement");
+  console.log("hurensohn");
 });
 
 //scrollIndicator disappear on certain scroll height
 
-// window.addEventListener("scroll", () => {
-//   if (window.scrollY > 150) {
-//     scrollIndicator.style.marginTop = "-20vh";
-//   }
-//   if (window.scrollY < 100) {
-//     scrollIndicator.style.marginTop = "-33vh";
-//   }
-// });
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    scrollIndicator.style.transform = "translateY(6rem)";
+  }
+  if (window.scrollY < 100) {
+    scrollIndicator.style.transform = "translateY(1rem)";
+  }
+});
 
 // ----------------------------------function calls
 
