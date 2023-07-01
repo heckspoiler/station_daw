@@ -135,8 +135,10 @@ header a:hover {
 
 .navbar__right {
       display: flex;
-      gap: 35px;
+      gap: 5%;
       align-items: center;
+      max-width: 28rem;
+      width: 33%;
 
 
 }
@@ -159,18 +161,23 @@ header a:hover {
 
 /* -----hero section styling----- */
 
+.hero-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+}
+
 /* section upper left */
 
 
 .hero-section__upper-left {
 
-      width: 50rem;
-      height: 32rem;
+      width: 60vw;
+      height: 36vw;
       display: flex;
       flex-direction: column;
       gap: 20px;
       background-image: url("./assets/home/images/hero-section-image-left.avif");
-      background-size: cover;
+      background-size: 100% 100%;
 }
 
 .hero-section__upper-left h1,
