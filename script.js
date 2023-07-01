@@ -19,8 +19,6 @@ const scrollIndicator = document.querySelector(".scroll-indicator");
 
 // ----------------------------------functions
 
-// _____________________________________event listeners
-
 // hero upper left cube color change
 
 heroUpperLeftPara.addEventListener("mouseover", () => {
@@ -70,16 +68,31 @@ const heroParaHover = (para) => {
   });
 };
 
+// scrollIndicator timeout appear
+
+setTimeout(() => {
+  scrollIndicator.style.marginTop = "-15vh";
+}, 2000);
+
+//scrollIndicator hover state change
+
 scrollIndicator.addEventListener("mouseover", () => {
   scrollIndicator.classList.toggle("scroll-indicator-movement");
 });
 
+//scrollIndicator disappear on certain scroll height
+
+// window.addEventListener("scroll", () => {
+//   if (window.scrollY > 150) {
+//     scrollIndicator.style.marginTop = "-20vh";
+//   }
+//   if (window.scrollY < 100) {
+//     scrollIndicator.style.marginTop = "-33vh";
+//   }
+// });
+
+// ----------------------------------function calls
+
 heroParaHover(heroPara);
 
-//______________________________________setTimeout functions
-
-// scroll indicator
-
-setTimeout(() => {
-  scrollIndicator.style.marginTop = "-33vh";
-}, 2000);
+console.log(window.innerWidth);

@@ -48,6 +48,16 @@ h2 {
 
 body {
       font-family: "BDO Grotesk Light", sans-serif;
+      width: 100vw;
+      max-width: 1300px;
+      margin-left: auto;
+      margin-right: auto;
+      overflow-x: hidden;
+}
+
+html {
+
+      scroll-behavior: smooth;
 }
 
 /* navbar styling */
@@ -169,6 +179,8 @@ header a:hover {
 
 
 .hero-section__upper-left {
+      max-width: 45rem;
+      max-height: 27rem;
 
       width: 60vw;
       height: 36vw;
@@ -229,7 +241,9 @@ header a:hover {
 /* hero section mid right styling */
 
 .hero-section__mid-right {
-      width: 38vw;
+      max-width: 40rem;
+      max-height: 30rem;
+      width: 40vw;
       height: 30vw;
       background-image: url("./assets/home/images/hero-section-image-right.avif");
       background-size: 100% 100%;
@@ -285,9 +299,12 @@ header a:hover {
 
 .hero-section__low-mid {
 
+
+      width: 35rem;
+      height: 20rem;
       width: 40vw;
-      height: 28vw;
-      margin-left: 46vw;
+      height: 22.857vw;
+      margin-left: 44vw;
       margin-top: -7vw;
       background-image: url("./assets/home/images/hero-section-lower-image.jpeg");
       background-size: cover;
@@ -323,7 +340,7 @@ header a:hover {
       height: 0.5rem;
       width: 0.5rem;
       position: absolute;
-      margin-left: 13.4rem;
+      margin-left: 11.6rem;
       margin-top: 4rem;
       transform: rotate(45deg);
       border-top: 3px solid #00ffff;
@@ -341,7 +358,7 @@ header a:hover {
 
 .scroll-indicator {
       position: fixed;
-      margin-top: -20vh;
+      margin-top: 0vh;
       margin-left: 23vw;
       display: flex;
       height: 6rem;
