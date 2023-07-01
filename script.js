@@ -13,6 +13,8 @@ const heroLowerMidCube = document.querySelector(
   ".hero-section__lower-mid-cube"
 );
 
+const heroPara = document.querySelectorAll(".hero-para");
+
 // ----------------------------------functions
 
 // _____________________________________event listeners
@@ -52,3 +54,18 @@ heroLowerMidPara.addEventListener("mouseout", () => {
   heroLowerMidCube.classList.remove("cube-low-hover");
   console.log("mouse out");
 });
+
+// pointer on hover for paragraphs in hero section
+
+const heroParaHover = (para) => {
+  para.forEach((para) => {
+    para.addEventListener("mouseover", () => {
+      para.style.cursor = "pointer";
+    });
+    para.addEventListener("mouseout", () => {
+      para.style.cursor = "default";
+    });
+  });
+};
+
+heroParaHover(heroPara);

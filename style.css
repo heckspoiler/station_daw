@@ -331,3 +331,10 @@ header a:hover {
       transition: border 0.2s ease-in-out;
 
 }
+
+.cube-low-hover {
+
+      border-top: 3px solid #ff0956;
+      border-right: 3px solid #ff0956;
+
+}
