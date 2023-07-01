@@ -70,8 +70,8 @@ header .navbar__left {
 header a {
       text-decoration: none;
       color: black;
-      font-size: 1.1rem;
-      transition: color 0.3s ease-in-out;
+      font-size: 0.9rem;
+      transition: color 0.1s ease-in-out;
       font-family: "BDO Grotesk Medium";
       width: 4rem;
       text-align: center;
@@ -80,13 +80,13 @@ header a {
 .navbar__left a:last-of-type::before {
       content: "";
       position: absolute;
-      margin-left: 3.55rem;
-      margin-top: 0.45rem;
+      margin-left: 3.05rem;
+      margin-top: 0.34rem;
       width: 0.14rem;
       height: 0.8rem;
       background-color: black;
       margin-right: 1rem;
-      transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+      transition: color 0.1s ease-in-out, transform 0.3s ease-in-out;
       transform: rotate(0deg);
 }
 
@@ -95,12 +95,12 @@ header a {
       position: absolute;
       margin-left: 0.8rem;
       transform: rotate(90deg);
-      margin-top: 0.45rem;
+      margin-top: 0.33rem;
       width: 0.14rem;
       height: 0.8rem;
       background-color: black;
       margin-right: 1rem;
-      transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+      transition: color 0.1s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .navbar__left a:last-of-type:hover::before,
@@ -157,11 +157,15 @@ header a:hover {
 }
 
 
-/* hero section styling */
+/* -----hero section styling----- */
+
+/* section upper left */
+
+
 .hero-section__upper-left {
 
-      width: 55rem;
-      height: 35rem;
+      width: 50rem;
+      height: 32rem;
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -188,4 +192,25 @@ header a:hover {
       font-family: "BDO Grotesk Medium";
       letter-spacing: -0.5px;
       font-size: 1.2rem;
+}
+
+.hero-section__upper-left p:hover {
+      color: #f77737;
+      mix-blend-mode: normal;
+}
+
+.cube-hover {
+      border-top: 4px solid #f77737 !important;
+      border-right: 4px solid #f77737 !important;
+}
+
+.hero-section__upper-left-cube {
+      height: 0.6rem;
+      width: 0.6rem;
+      position: absolute;
+      margin-left: 15.2rem;
+      margin-top: 10.1rem;
+      transform: rotate(45deg);
+      border-top: 4px solid #fdf900;
+      border-right: 4px solid #fdf900;
 }
