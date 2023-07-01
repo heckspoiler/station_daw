@@ -15,6 +15,8 @@ const heroLowerMidCube = document.querySelector(
 
 const heroPara = document.querySelectorAll(".hero-para");
 
+const scrollIndicator = document.querySelector(".scroll-indicator");
+
 // ----------------------------------functions
 
 // _____________________________________event listeners
@@ -68,4 +70,16 @@ const heroParaHover = (para) => {
   });
 };
 
+scrollIndicator.addEventListener("mouseover", () => {
+  scrollIndicator.classList.toggle("scroll-indicator-movement");
+});
+
 heroParaHover(heroPara);
+
+//______________________________________setTimeout functions
+
+// scroll indicator
+
+setTimeout(() => {
+  scrollIndicator.style.marginTop = "-33vh";
+}, 2000);

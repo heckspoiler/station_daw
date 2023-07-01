@@ -338,3 +338,30 @@ header a:hover {
       border-right: 3px solid #ff0956;
 
 }
+
+.scroll-indicator {
+      position: fixed;
+      margin-top: -20vh;
+      margin-left: 23vw;
+      display: flex;
+      height: 6rem;
+      width: 4.5rem;
+      border: 1px solid black;
+      justify-content: center;
+      align-items: center;
+      background-color: #0000ff;
+      transition: margin-top 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.scroll-indicator-arrow {
+      height: 0.8rem;
+      width: 0.8rem;
+      margin-top: -30px;
+      border-top: 2px solid #fff;
+      border-right: 2px solid #fff;
+      transform: rotate(135deg);
+}
+
+.scroll-indicator-movement {
+      margin-top: -30vh !important;
+}
