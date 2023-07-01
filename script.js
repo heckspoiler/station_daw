@@ -1,4 +1,4 @@
-//definitions variables
+// ----------------------------------definitions variables
 
 const heroUpperLeftPara = document.querySelector(".hero-section__upper-left p");
 const heroUpperLeftCube = document.querySelector(
@@ -8,11 +8,16 @@ const heroMidRightPara = document.querySelector(".hero-section__mid-right p");
 const heroMidRightCube = document.querySelector(
   ".hero-section__upper-right-cube"
 );
+const heroLowerMidPara = document.querySelector(".hero-section__low-mid p");
+const heroLowerMidCube = document.querySelector(
+  ".hero-section__lower-mid-cube"
+);
 
-console.log(heroMidRightCube);
-console.log(heroMidRightPara);
+// ----------------------------------functions
 
-// functions
+// _____________________________________event listeners
+
+// hero upper left cube color change
 
 heroUpperLeftPara.addEventListener("mouseover", () => {
   heroUpperLeftCube.classList.add("cube-hover");
@@ -24,6 +29,8 @@ heroUpperLeftPara.addEventListener("mouseout", () => {
   console.log("mouse out");
 });
 
+// hero mid right cube color change
+
 heroMidRightPara.addEventListener("mouseover", () => {
   heroMidRightCube.classList.add("cube-right-hover");
   console.log("mouse in");
@@ -31,5 +38,17 @@ heroMidRightPara.addEventListener("mouseover", () => {
 
 heroMidRightPara.addEventListener("mouseout", () => {
   heroMidRightCube.classList.remove("cube-right-hover");
+  console.log("mouse out");
+});
+
+// hero lower mid cube color change
+
+heroLowerMidPara.addEventListener("mouseover", () => {
+  heroLowerMidCube.classList.add("cube-low-hover");
+  console.log("mouse in");
+});
+
+heroLowerMidPara.addEventListener("mouseout", () => {
+  heroLowerMidCube.classList.remove("cube-low-hover");
   console.log("mouse out");
 });

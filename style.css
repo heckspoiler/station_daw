@@ -236,8 +236,8 @@ header a:hover {
       display: flex;
       flex-direction: column;
       gap: 20px;
-      margin-top: -60vh;
-      margin-left: 65vw;
+      margin-top: -50vh;
+      margin-left: 64vw;
       color: #00ffaf;
       padding: 2rem;
       font-family: "BDO Grotesk Medium";
@@ -287,7 +287,7 @@ header a:hover {
 
       width: 40vw;
       height: 28vw;
-      margin-left: 45vw;
+      margin-left: 46vw;
       margin-top: -7vw;
       background-image: url("./assets/home/images/hero-section-lower-image.jpeg");
       background-size: cover;
@@ -310,4 +310,24 @@ header a:hover {
       text-decoration: solid underline;
       transition: color 0.2s ease-in-out;
       font-size: 0.9rem;
+      transition: color 0.2s ease-in-out;
+      width: 50%;
+}
+
+.hero-section__low-mid p:hover {
+      color: #ff0956;
+      mix-blend-mode: normal;
+}
+
+.hero-section__lower-mid-cube {
+      height: 0.5rem;
+      width: 0.5rem;
+      position: absolute;
+      margin-left: 13.4rem;
+      margin-top: 4rem;
+      transform: rotate(45deg);
+      border-top: 3px solid #00ffff;
+      border-right: 3px solid #00ffff;
+      transition: border 0.2s ease-in-out;
+
 }
