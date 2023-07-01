@@ -236,7 +236,7 @@ header a:hover {
       display: flex;
       flex-direction: column;
       gap: 20px;
-      margin-top: -80vh;
+      margin-top: -60vh;
       margin-left: 65vw;
       color: #00ffaf;
       padding: 2rem;
@@ -301,6 +301,7 @@ header a:hover {
 
 .hero-section__low-mid h1 {
       font-size: 1.6rem;
+      mix-blend-mode: overlay;
 
 
 }
