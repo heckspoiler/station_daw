@@ -74,13 +74,6 @@ setTimeout(() => {
   scrollIndicator.style.transform = "translateY(1rem)";
 }, 2000);
 
-//scrollIndicator hover state change
-
-scrollIndicator.addEventListener("mouseover", () => {
-  scrollIndicator.classList.toggle("scroll-indicator-movement");
-  console.log("hurensohn");
-});
-
 //scrollIndicator disappear on certain scroll height
 
 window.addEventListener("scroll", () => {

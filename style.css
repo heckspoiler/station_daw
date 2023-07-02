@@ -1,15 +1,8 @@
-/* imports */
+/* imports & defining variables */
 
-@font-face {
-      font-family: 'Gosha Bold';
-      src: url('./assets/fonts/GoshaSans-Bold.otf');
-
-}
-
-@font-face {
-      font-family: 'Gosha Regular';
-      src: url('./assets/fonts/GoshaSans-Regular.otf');
-
+:root {
+      --title-font: "Montserrat Bold", sans-serif;
+      --para-font: "Montserrat Regular", sans-serif;
 }
 
 
@@ -26,6 +19,18 @@
 }
 
 
+@font-face {
+      font-family: 'Montserrat Bold';
+      src: url('./assets/fonts/Montserrat-Bold.ttf');
+
+}
+
+@font-face {
+      font-family: 'Montserrat Regular';
+      src: url('./assets/fonts/Montserrat-Regular.ttf');
+
+}
+
 /* reset */
 
 * {
@@ -37,17 +42,17 @@
 /* general styling */
 
 h1 {
-      font-family: "BDO Grotesk Medium", sans-serif;
+      font-family: var(--title-font), sans-serif;
       font-size: 2.5rem;
 }
 
 h2 {
-      font-family: "Gosha Bold", sans-serif;
+      font-family: var(--title-font), sans-serif;
       font-size: 1.5rem;
 }
 
 body {
-      font-family: "BDO Grotesk Light", sans-serif;
+      font-family: var(--para-font), sans-serif;
       width: 100vw;
       max-width: 1400px !important;
       margin-left: auto;
@@ -85,7 +90,7 @@ header a {
       color: black;
       font-size: 0.9rem;
       transition: color 0.1s ease-in-out;
-      font-family: "BDO Grotesk Medium";
+      font-family: var(--para-font), sans-serif;
       width: 4rem;
       text-align: center;
 }
@@ -93,8 +98,8 @@ header a {
 .navbar__left a:last-of-type::before {
       content: "";
       position: absolute;
-      margin-left: 3.05rem;
-      margin-top: 0.34rem;
+      margin-left: 3rem;
+      margin-top: 0.2rem;
       width: 0.14rem;
       height: 0.8rem;
       background-color: black;
@@ -106,9 +111,9 @@ header a {
 .navbar__left a:last-of-type::after {
       content: "";
       position: absolute;
-      margin-left: 0.8rem;
+      margin-left: 0.63rem;
       transform: rotate(90deg);
-      margin-top: 0.33rem;
+      margin-top: 0.2rem;
       width: 0.14rem;
       height: 0.8rem;
       background-color: black;
@@ -210,7 +215,6 @@ header a:hover {
 .hero-section__upper-left p {
       margin-left: 4rem;
       text-decoration: solid underline;
-      font-family: "BDO Grotesk Medium";
       letter-spacing: -0.5px;
       font-size: 1.2rem;
       width: 27%;
@@ -257,7 +261,6 @@ header a:hover {
       margin-left: 54rem;
       color: #00ffaf;
       padding: 2rem;
-      font-family: "BDO Grotesk Medium";
 
 }
 
@@ -313,7 +316,6 @@ header a:hover {
       background-size: cover;
       color: #00ffff;
       padding: 2rem;
-      font-family: "BDO Grotesk Medium";
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -386,7 +388,6 @@ header a:hover {
 }
 
 
-
 .scroll-indicator-arrow {
       height: 1.2rem;
       width: 1.2rem;
@@ -394,8 +395,4 @@ header a:hover {
       border-top: 3px solid #fff;
       border-right: 3px solid #fff;
       transform: rotate(135deg);
-}
-
-.scroll-indicator-movement {
-      transform: translateY(2rem) !important;
 }
