@@ -1,5 +1,7 @@
 // ----------------------------------definitions variables
 
+const header = document.querySelector("header nav");
+
 const heroUpperLeftPara = document.querySelector(".hero-section__upper-left p");
 const heroUpperLeftCube = document.querySelector(
   ".hero-section__upper-left-cube"
@@ -18,6 +20,21 @@ const heroPara = document.querySelectorAll(".hero-para");
 const scrollIndicator = document.querySelector(".scroll-indicator");
 
 // ----------------------------------functions
+
+// header color change on scroll
+
+window.addEventListener("scroll", () => {
+  console.log(window.scrollY);
+});
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    header.classList.add("header-scroll");
+  }
+  if (window.scrollY < 100) {
+    header.classList.remove("header-scroll");
+  }
+});
 
 // hero upper left cube color change
 
@@ -77,10 +94,10 @@ setTimeout(() => {
 //scrollIndicator disappear on certain scroll height
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 100) {
+  if (window.scrollY > 120) {
     scrollIndicator.style.transform = "translateY(6rem)";
   }
-  if (window.scrollY < 100) {
+  if (window.scrollY < 120) {
     scrollIndicator.style.transform = "translateY(1rem)";
   }
 });

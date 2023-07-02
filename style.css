@@ -59,6 +59,7 @@ body {
       margin-right: auto;
       overflow-x: hidden;
 
+
 }
 
 html {
@@ -70,6 +71,7 @@ html {
 /* navbar styling */
 
 header nav {
+      position: fixed;
       height: 4.3rem;
       max-width: 1300px;
       width: 100%;
@@ -77,6 +79,13 @@ header nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      top: 0;
+      transition: background-color 0.2s ease-in;
+      z-index: 1;
+}
+
+.header-scroll {
+      background-color: white;
 }
 
 header .navbar__left {
@@ -88,17 +97,18 @@ header .navbar__left {
 header a {
       text-decoration: none;
       color: black;
-      font-size: 0.9rem;
+      font-size: 1rem;
       transition: color 0.1s ease-in-out;
       font-family: var(--para-font), sans-serif;
       width: 4rem;
       text-align: center;
+
 }
 
 .navbar__left a:last-of-type::before {
       content: "";
       position: absolute;
-      margin-left: 3rem;
+      margin-left: 3.25rem;
       margin-top: 0.2rem;
       width: 0.14rem;
       height: 0.8rem;
@@ -181,6 +191,7 @@ header a:hover {
 
 .hero-section {
       height: calc(100vh - 4.3rem);
+      margin-top: 4.3rem;
       /* max-width: 1300px; */
 }
 
@@ -197,6 +208,7 @@ header a:hover {
       gap: 20px;
       background-image: url("./assets/home/images/hero-section-image-left.avif");
       background-size: 100% 100%;
+
 }
 
 .hero-section__upper-left h1,
@@ -236,6 +248,7 @@ header a:hover {
       border-top: 4px solid #fdf900;
       border-right: 4px solid #fdf900;
       transition: border 0.2s ease-in-out;
+
 }
 
 .cube-hover {
@@ -390,3 +403,45 @@ header a:hover {
       border-right: 3px solid #fff;
       transform: rotate(135deg);
 }
+
+/* -------------- main section styling -------------- */
+
+main {
+
+      width: 100%;
+      margin-top: 10rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.main-section__first-section-upper {
+      display: flex;
+      align-items: center;
+      width: 80vw;
+      justify-content: space-between;
+      padding: 1rem 2rem 1rem 2rem;
+}
+
+.main-section__first-section-upper-links {
+      display: flex;
+      height: 100%;
+      width: 65%;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.main-section__first-section-upper-links a {
+      text-decoration: none;
+      color: #0000ff;
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: -0.5px;
+      transition: color 0.2s ease-in-out;
+}
+
+.main-section__first-section-upper-links a:hover {
+      color: #f77737;
+}
+
+.main-section-first-section-lower-article {}
