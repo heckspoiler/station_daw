@@ -48,7 +48,7 @@ h1 {
 
 h2 {
       font-family: var(--title-font), sans-serif;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
 }
 
 body {
@@ -202,7 +202,6 @@ header a:hover {
 .hero-section__upper-left h1,
 .hero-section__upper-left p {
       color: #fdf900;
-      mix-blend-mode: overlay;
 }
 
 .hero-section__upper-left h1 {
@@ -223,7 +222,6 @@ header a:hover {
 
 .hero-section__upper-left p:hover {
       color: #f77737;
-      mix-blend-mode: normal;
 }
 
 
@@ -232,7 +230,7 @@ header a:hover {
       height: 0.6rem;
       width: 0.6rem;
       position: absolute;
-      margin-left: 15.2rem;
+      margin-left: 15.8rem;
       margin-top: 10.1rem;
       transform: rotate(45deg);
       border-top: 4px solid #fdf900;
@@ -257,8 +255,8 @@ header a:hover {
       display: flex;
       flex-direction: column;
       gap: 20px;
-      margin-top: -50vh;
-      margin-left: 54rem;
+      margin-top: -24vw;
+      margin-left: 63vw;
       color: #00ffaf;
       padding: 2rem;
 
@@ -266,18 +264,16 @@ header a:hover {
 
 .hero-section__mid-right h1 {
       font-size: 2rem;
-      mix-blend-mode: overlay;
+
 }
 
 .hero-section__mid-right p {
       text-decoration: solid underline;
       transition: color 0.2s ease-in-out;
-      mix-blend-mode: overlay;
 }
 
 .hero-section__mid-right p:hover {
       color: #3477f2;
-      mix-blend-mode: normal;
 
 }
 
@@ -323,7 +319,6 @@ header a:hover {
 
 .hero-section__low-mid h1 {
       font-size: 1.6rem;
-      mix-blend-mode: overlay;
 
 
 }
@@ -338,7 +333,6 @@ header a:hover {
 
 .hero-section__low-mid p:hover {
       color: #ff0956;
-      mix-blend-mode: normal;
 }
 
 .hero-section__lower-mid-cube {
