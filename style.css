@@ -415,10 +415,17 @@ main {
       align-items: center;
 }
 
+.main-section__first-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
 .main-section__first-section-upper {
       display: flex;
       align-items: center;
-      width: 80vw;
+      width: 90vw;
       justify-content: space-between;
       padding: 1rem 2rem 1rem 2rem;
 }
@@ -444,4 +451,38 @@ main {
       color: #f77737;
 }
 
-.main-section-first-section-lower-article {}
+.main-section__first-section-lower {
+      padding: 1rem 2rem 1rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 90vw;
+}
+
+.main-section-first-section-lower-article {
+      height: 19rem;
+      width: 22rem;
+
+}
+
+.img-div {
+
+      height: 70%;
+      width: 100%;
+      margin: 20px auto 0 auto;
+}
+
+.img-div-first {
+      background-image: url("./assets/home/images/main-section-images/main-section-image-woman.jpeg");
+      background-size: cover;
+}
+
+.img-div-second {
+      background-image: url("./assets/home/images/main-section-images/main-section-image-podcast.jpeg");
+      background-size: cover;
+}
+
+.img-div-third {
+      background-image: url("./assets/home/images/main-section-images/main-section-image-guitar.jpeg");
+      background-position: center;
+      background-size: cover;
+}
