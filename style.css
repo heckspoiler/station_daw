@@ -191,6 +191,8 @@ header a:hover {
 
 .hero-section {
       height: calc(100vh - 4.3rem);
+      max-height: 750px;
+
       margin-top: 4.3rem;
       /* max-width: 1300px; */
 }
@@ -413,6 +415,7 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
+      max-width: 1400px !important;
 }
 
 .main-section__first-section {
@@ -420,6 +423,7 @@ main {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      max-width: 1400px !important;
 }
 
 .main-section__first-section-upper {
@@ -428,6 +432,7 @@ main {
       width: 90vw;
       justify-content: space-between;
       padding: 1rem 2rem 1rem 2rem;
+      max-width: 1400px !important;
 }
 
 .main-section__first-section-upper-links {
@@ -436,6 +441,7 @@ main {
       width: 65%;
       justify-content: space-between;
       align-items: center;
+
 }
 
 .main-section__first-section-upper-links a {
@@ -455,7 +461,10 @@ main {
       padding: 1rem 2rem 1rem 2rem;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      align-items: center;
       width: 85vw;
+      max-width: 1400px !important;
 }
 
 .main-section-first-section-lower-article {
@@ -485,4 +494,33 @@ main {
       background-image: url("./assets/home/images/main-section-images/main-section-image-guitar.jpeg");
       background-position: center;
       background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  --------- media queries ----------- */
+
+@media screen and (min-width: 1400px) {
+      body {}
+
+      .hero-section__mid-right {
+
+            margin-left: 55rem;
+
+
+      }
+
+      main {
+            margin-top: 0;
+      }
 }
