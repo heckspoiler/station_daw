@@ -1,8 +1,8 @@
 /* imports & defining variables */
 
 :root {
-      --title-font: "Schibsted Grotesk Bold", sans-serif;
-      --para-font: "Montserrat Regular", sans-serif;
+      --title-font: "Futura Bold", sans-serif;
+      --para-font: "Futura Light", sans-serif;
 }
 
 
@@ -28,19 +28,20 @@
 @font-face {
       font-family: 'Montserrat Regular';
       src: url('./assets/fonts/Montserrat-Regular.ttf');
+      font-weight: 200;
 
 }
 
 @font-face {
-      font-family: 'Syne Variable Bold';
-      src: url('./assets/fonts/Syne-VariableFont_wght.ttf');
+      font-family: 'Futura Bold';
+      src: url('./assets/fonts/futura-bold.ttf');
       font-weight: 800;
 
 }
 
 @font-face {
-      font-family: 'Syne Variable SemiBold';
-      src: url('./assets/fonts/Syne-VariableFont_wght.ttf');
+      font-family: 'Futura Light';
+      src: url('./assets/fonts/futura-light.ttf');
       font-weight: 600;
 
 }
@@ -527,7 +528,7 @@ main {
       background-size: cover;
 }
 
-.img-div-sfirst-section-second {
+.img-div-first-section-second {
       background-image: url("./assets/home/images/main-section-images/main-section-image-podcast.jpeg");
       background-size: cover;
 }
@@ -548,7 +549,7 @@ main {
       display: flex;
       flex-direction: column;
       margin-top: 1rem;
-      gap: 5px;
+      gap: 10px;
 }
 
 .main-subsection-article-text h3 {
@@ -565,7 +566,7 @@ main {
       font-weight: 300;
       font-size: 1rem;
       font-family: var(--para-font);
-      line-height: 1.2rem;
+      line-height: 1.1rem;
 
 }
 
@@ -573,6 +574,27 @@ main {
 /* main section second section */
 
 
+.main-section__second-section-upper-links {
+
+      justify-content: flex-end;
+      padding-right: 2rem;
+}
+
+.img-div-second-section-first {
+      background-image: url("./assets/home/images/main-section-images/second_section/second-section-first-pattern.jpeg");
+      background-size: cover;
+}
+
+.img-div-second-section-second {
+      background-image: url("./assets/home/images/main-section-images/second_section/second-section-second-pattern.jpeg");
+      background-size: cover;
+}
+
+.img-div-second-section-third {
+      background-image: url("./assets/home/images/main-section-images/second_section/second-section-third-pattern.jpeg");
+      background-position: center;
+      background-size: cover;
+}
 
 /*  --------- media queries ----------- */
 
