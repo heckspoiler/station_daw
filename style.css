@@ -489,7 +489,7 @@ main {
 .main-subsection-upper a {
       text-decoration: none;
       color: #0000ff;
-      font-size: 1rem;
+      font-size: 1.2rem;
       font-weight: 400;
       letter-spacing: -0.5px;
       transition: color 0.2s ease-in-out;
@@ -618,6 +618,26 @@ main {
 
 .img-div-third-section-third {
       background-image: url("./assets/home/images/main-section-images/third_section/third-section-third-image.jpeg");
+      background-position: center;
+      background-size: cover;
+}
+
+/* main section fourth section */
+
+
+.img-div-fourth-section-first {
+      background-image: url("./assets/home/images/main-section-images/fourth_section/fourth-section-first-image.jpeg");
+      background-size: cover;
+      background-position: center;
+}
+
+.img-div-fourth-section-second {
+      background-image: url("./assets/home/images/main-section-images/fourth_section/fourth-section-second-image.jpeg");
+      background-size: cover;
+}
+
+.img-div-fourth-section-third {
+      background-image: url("./assets/home/images/main-section-images/fourth_section/fourth-section-third-image.jpeg");
       background-position: center;
       background-size: cover;
 }
