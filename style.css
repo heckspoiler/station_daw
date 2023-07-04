@@ -448,14 +448,16 @@ main {
       width: 100%;
       margin-top: 10rem;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       max-width: 1400px !important;
+      gap: 6rem;
 }
 
 /* main section first section */
 
-.main-section__first-section {
+.main-sections {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -463,7 +465,7 @@ main {
       max-width: 1400px !important;
 }
 
-.main-section__first-section-upper {
+.main-section-upper {
       display: flex;
       align-items: center;
       width: 90vw;
@@ -472,7 +474,7 @@ main {
       max-width: 1400px !important;
 }
 
-.main-section__first-section-upper-links {
+.main-subsection-upper {
       display: flex;
       height: 100%;
       width: 65%;
@@ -482,7 +484,7 @@ main {
 
 }
 
-.main-section__first-section-upper-links a {
+.main-subsection-upper a {
       text-decoration: none;
       color: #0000ff;
       font-size: 1rem;
@@ -491,11 +493,11 @@ main {
       transition: color 0.2s ease-in-out;
 }
 
-.main-section__first-section-upper-links a:hover {
+.main-subsection-upper a:hover {
       color: #f77737;
 }
 
-.main-section__first-section-lower {
+.main-subsection-lower {
       padding: 1rem 4rem 1rem 4rem;
       display: flex;
       flex-direction: row;
@@ -508,7 +510,7 @@ main {
       grid-column-gap: calc((90vw - 1400px) / 3);
 }
 
-.main-section-first-section-lower-article {
+.main-subsection-article {
       height: 22rem;
       width: 21rem;
 }
@@ -520,52 +522,57 @@ main {
       margin: 20px auto 0 auto;
 }
 
-.img-div-first {
+.img-div-first-section-first {
       background-image: url("./assets/home/images/main-section-images/main-section-image-woman.jpeg");
       background-size: cover;
 }
 
-.img-div-second {
+.img-div-sfirst-section-second {
       background-image: url("./assets/home/images/main-section-images/main-section-image-podcast.jpeg");
       background-size: cover;
 }
 
-.img-div-third {
+.img-div-first-section-third {
       background-image: url("./assets/home/images/main-section-images/main-section-image-guitar.jpeg");
       background-position: center;
       background-size: cover;
 }
 
 
-.main-section-first-section-lower-article {
+.main-subsection-article {
       display: flex;
       flex-direction: column;
 }
 
-.main-section-first-section-lower-text {
+.main-subsection-article-text {
       display: flex;
       flex-direction: column;
       margin-top: 1rem;
       gap: 5px;
 }
 
-.main-section-first-section-lower-text h3 {
+.main-subsection-article-text h3 {
       background-color: #fed134;
       width: 5rem;
       font-weight: 300;
       font-size: 0.7rem;
-      padding: 0.5rem;
+      padding: 0.2rem;
       font-family: var(--para-font);
       text-align: center;
 }
 
-.main-section-first-section-lower-text p {
+.main-subsection-article-text p {
       font-weight: 300;
       font-size: 1rem;
       font-family: var(--para-font);
       line-height: 1.2rem;
 
 }
+
+
+/* main section second section */
+
+
 
 /*  --------- media queries ----------- */
 
