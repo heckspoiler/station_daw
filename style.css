@@ -461,6 +461,7 @@ main {
 
 .main-sections {
       display: flex;
+      flex-wrap: wrap;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -469,6 +470,7 @@ main {
 
 .main-section-upper {
       display: flex;
+
       align-items: center;
       width: 90vw;
       justify-content: space-between;
@@ -501,6 +503,7 @@ main {
 
 .main-subsection-lower {
       padding: 1rem 4rem 1rem 4rem;
+      flex-wrap: wrap;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -640,6 +643,25 @@ main {
       background-image: url("./assets/home/images/main-section-images/fourth_section/fourth-section-third-image.jpeg");
       background-position: center;
       background-size: cover;
+}
+
+
+/* Lower Links Section */
+
+.lower-link-section {
+      background-color: #eeeeee;
+      height: 8rem;
+      width: 100vw;
+      font-size: 1.3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+}
+
+.lower-link-section a {
+      text-decoration: none;
+      color: #0000ff;
 }
 
 /*  --------- media queries ----------- */
