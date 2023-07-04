@@ -1,7 +1,7 @@
 /* imports & defining variables */
 
 :root {
-      --title-font: "Montserrat Bold", sans-serif;
+      --title-font: "Schibsted Grotesk Bold", sans-serif;
       --para-font: "Montserrat Regular", sans-serif;
 }
 
@@ -28,6 +28,42 @@
 @font-face {
       font-family: 'Montserrat Regular';
       src: url('./assets/fonts/Montserrat-Regular.ttf');
+
+}
+
+@font-face {
+      font-family: 'Syne Variable Bold';
+      src: url('./assets/fonts/Syne-VariableFont_wght.ttf');
+      font-weight: 800;
+
+}
+
+@font-face {
+      font-family: 'Syne Variable SemiBold';
+      src: url('./assets/fonts/Syne-VariableFont_wght.ttf');
+      font-weight: 600;
+
+}
+
+@font-face {
+      font-family: 'Syne Variable Regular';
+      src: url('./assets/fonts/Syne-VariableFont_wght.ttf');
+      font-weight: 400;
+
+}
+
+
+@font-face {
+      font-family: 'Schibsted Grotesk Bold';
+      src: url('./assets/fonts/SchibstedGrotesk-Bold.ttf');
+      font-weight: 400;
+
+}
+
+@font-face {
+      font-family: 'Schibsted Grotesk Regular';
+      src: url('./assets/fonts/SchibstedGrotesk-Regular.ttf');
+      font-weight: 400;
 
 }
 
@@ -334,8 +370,7 @@ header a:hover {
 
 .hero-section__low-mid h1 {
       font-size: 1.6rem;
-
-
+      margin-bottom: 1rem;
 }
 
 .hero-section__low-mid p {
@@ -418,6 +453,8 @@ main {
       max-width: 1400px !important;
 }
 
+/* main section first section */
+
 .main-section__first-section {
       display: flex;
       flex-direction: column;
@@ -431,7 +468,7 @@ main {
       align-items: center;
       width: 90vw;
       justify-content: space-between;
-      padding: 1rem 2rem 1rem 2rem;
+      padding: 1rem;
       max-width: 1400px !important;
 }
 
@@ -441,6 +478,7 @@ main {
       width: 65%;
       justify-content: space-between;
       align-items: center;
+
 
 }
 
@@ -458,19 +496,21 @@ main {
 }
 
 .main-section__first-section-lower {
-      padding: 1rem 2rem 1rem 2rem;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      justify-content: center;
+      padding: 1rem 4rem 1rem 4rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
       align-items: center;
-      width: 85vw;
+      width: 90vw;
       max-width: 1400px !important;
+      margin-left: auto;
+      margin-right: auto;
+      grid-column-gap: calc((90vw - 1400px) / 3);
 }
 
 .main-section-first-section-lower-article {
-      height: 19rem;
-      width: 22rem;
-
+      height: 22rem;
+      width: 20rem;
 }
 
 .img-div {
@@ -497,16 +537,35 @@ main {
 }
 
 
+.main-section-first-section-lower-article {
+      display: flex;
+      flex-direction: column;
+}
 
+.main-section-first-section-lower-text {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+      gap: 5px;
+}
 
+.main-section-first-section-lower-text h3 {
+      background-color: #fed134;
+      width: 5rem;
+      font-weight: 300;
+      font-size: 0.7rem;
+      padding: 0.5rem;
+      font-family: var(--para-font);
+      text-align: center;
+}
 
+.main-section-first-section-lower-text p {
+      font-weight: 300;
+      font-size: 1rem;
+      font-family: var(--para-font);
+      line-height: 1.2rem;
 
-
-
-
-
-
-
+}
 
 /*  --------- media queries ----------- */
 
