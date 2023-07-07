@@ -199,6 +199,10 @@ header a:hover {
       align-items: center;
 }
 
+.logo img {
+      scale: 0.05;
+}
+
 .navbar__right {
       display: flex;
       gap: 25px;
@@ -568,9 +572,9 @@ main {
 
 .main-subsection-article-text p {
       font-weight: 300;
-      font-size: 1rem;
+      font-size: 1.1rem;
       font-family: var(--para-font);
-      line-height: 1.1rem;
+      line-height: 1.5rem;
 
 }
 
@@ -656,13 +660,32 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 25px;
+      gap: 30px;
 }
 
 .lower-link-section a {
       text-decoration: none;
       color: #0000ff;
 }
+
+/* ------------------- FOOTER STYLING ---------------------- */
+
+footer {
+      margin-top: 0;
+      height: 30rem;
+      padding: 6rem;
+}
+
+.footer-logo-container {
+      background-image: url("./assets/logo/logo-written.png");
+      height: calc(200px/3.87);
+      width: 200px;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+
+}
+
+
 
 /*  --------- media queries ----------- */
 
