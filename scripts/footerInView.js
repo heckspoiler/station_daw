@@ -11,7 +11,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.9 }
+  { threshold: 0.7 }
 );
 
 // Start observing all sections
