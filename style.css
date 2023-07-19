@@ -311,8 +311,8 @@ header a:hover {
 }
 
 .hero-section__upper-left p:hover::after {
-      border-top: 4px solid #f77737 !important;
-      border-right: 4px solid #f77737 !important;
+      border-top: 2px solid #f77737 !important;
+      border-right: 2px solid #f77737 !important;
 }
 
 /* hero section mid right styling */
@@ -334,11 +334,6 @@ header a:hover {
       margin-top: calc(3rem + 5vw)
 }
 
-.hero-section__mid-right h1 {
-      font-size: 35rem;
-      font-family: "Futura Light" !important;
-
-}
 
 .hero-section__mid-right p {
       text-decoration: solid underline;
@@ -366,8 +361,8 @@ header a:hover {
 
 .hero-section__mid-right p:hover::after {
 
-      border-top: 3px solid #3477f2;
-      border-right: 3px solid #3477f2;
+      border-top: 2px solid #3477f2;
+      border-right: 2px solid #3477f2;
 
 }
 
@@ -391,10 +386,6 @@ header a:hover {
       width: calc(15rem + 18vw);
 }
 
-.hero-section__low-mid h1 {
-      font-size: 2rem !important;
-      margin-bottom: 1rem;
-}
 
 .hero-section__low-mid p {
       text-decoration: solid underline;
@@ -424,8 +415,8 @@ header a:hover {
 
 .hero-section__low-mid p:hover::after {
 
-      border-top: 3px solid #ff0956;
-      border-right: 3px solid #ff0956;
+      border-top: 2px solid #ff0956;
+      border-right: 2px solid #ff0956;
 
 }
 
@@ -856,56 +847,4 @@ footer a::after {
 
 .footer_dropdown-section select:nth-of-type(2) {
       width: calc(4rem + 15vw);
-}
-
-
-/*  --------- media queries ----------- */
-
-@media screen and (min-width: 1400px) {
-      body {}
-
-      nav {
-            width: 100vw;
-      }
-
-      .hero-section {
-            margin-top: 4.3rem;
-            width: 100%;
-      }
-
-      .hero-section__mid-right {
-            margin-left: calc(15rem + 40vw);
-            scale: 1.2;
-      }
-
-      .hero-section__low-mid {
-            max-width: 35rem;
-            max-height: 20rem;
-            margin-left: calc(23rem +10vw);
-            margin-top: 30rem;
-            background-image: url("./assets/home/images/hero-section-lower-image.jpeg");
-            scale: 1.2;
-
-      }
-
-      .hero-section__upper-left {
-            scale: 1.2;
-            margin-top: 7.3rem;
-      }
-
-      main {
-            margin-top: 10rem;
-      }
-
-      footer {
-            width: calc(100% + 5rem);
-            margin-left: auto;
-            margin-right: auto;
-      }
-
-      .social-icons img {
-            height: 3vw;
-            width: 3vw;
-      }
-
 }
