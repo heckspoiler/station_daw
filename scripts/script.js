@@ -36,42 +36,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// hero upper left cube color change
-
-heroUpperLeftPara.addEventListener("mouseover", () => {
-  heroUpperLeftCube.classList.add("cube-hover");
-  console.log("mouse in");
-});
-
-heroUpperLeftPara.addEventListener("mouseout", () => {
-  heroUpperLeftCube.classList.remove("cube-hover");
-  console.log("mouse out");
-});
-
-// hero mid right cube color change
-
-heroMidRightPara.addEventListener("mouseover", () => {
-  heroMidRightCube.classList.add("cube-right-hover");
-  console.log("mouse in");
-});
-
-heroMidRightPara.addEventListener("mouseout", () => {
-  heroMidRightCube.classList.remove("cube-right-hover");
-  console.log("mouse out");
-});
-
-// hero lower mid cube color change
-
-heroLowerMidPara.addEventListener("mouseover", () => {
-  heroLowerMidCube.classList.add("cube-low-hover");
-  console.log("mouse in");
-});
-
-heroLowerMidPara.addEventListener("mouseout", () => {
-  heroLowerMidCube.classList.remove("cube-low-hover");
-  console.log("mouse out");
-});
-
 // pointer on hover for paragraphs in hero section
 
 const heroParaHover = (para) => {

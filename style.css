@@ -282,20 +282,21 @@ header a:hover {
 
 
 
-.hero-section__upper-left-cube {
-      height: 0.6rem;
-      width: 0.6rem;
+.hero-section__upper-left p::after {
+      content: "";
+      height: 0.4rem;
+      width: 0.4rem;
+      margin-top: 9px;
+      margin-left: 3px;
       position: absolute;
-      margin-left: 15.8rem;
-      margin-top: 10.1rem;
       transform: rotate(45deg);
-      border-top: 4px solid #fdf900;
-      border-right: 4px solid #fdf900;
+      border-top: 2px solid #fdf900;
+      border-right: 2px solid #fdf900;
       transition: border 0.2s ease-in-out;
 
 }
 
-.cube-hover {
+.hero-section__upper-left p:hover::after {
       border-top: 4px solid #f77737 !important;
       border-right: 4px solid #f77737 !important;
 }
@@ -334,20 +335,21 @@ header a:hover {
 
 }
 
-.hero-section__upper-right-cube {
-      height: 0.5rem;
-      width: 0.5rem;
+.hero-section__mid-right p::after {
+      content: "";
+      height: 0.4rem;
+      width: 0.4rem;
+      margin-top: 8px;
+      margin-left: 3px;
       position: absolute;
-      margin-left: 13.2rem;
-      margin-top: 4.65rem;
       transform: rotate(45deg);
-      border-top: 3px solid #00ffaf;
-      border-right: 3px solid #00ffaf;
+      border-top: 2px solid #00ffaf;
+      border-right: 2px solid #00ffaf;
       transition: border 0.2s ease-in-out;
 
 }
 
-.cube-right-hover {
+.hero-section__mid-right p:hover::after {
 
       border-top: 3px solid #3477f2;
       border-right: 3px solid #3477f2;
@@ -391,20 +393,21 @@ header a:hover {
       color: #ff0956;
 }
 
-.hero-section__lower-mid-cube {
-      height: 0.5rem;
-      width: 0.5rem;
+.hero-section__low-mid p::after {
+      content: "";
+      height: 0.4rem;
+      width: 0.4rem;
+      margin-top: 7px;
+      margin-left: 3px;
       position: absolute;
-      margin-left: 11.6rem;
-      margin-top: 4rem;
       transform: rotate(45deg);
-      border-top: 3px solid #00ffff;
-      border-right: 3px solid #00ffff;
+      border-top: 2px solid #00ffff;
+      border-right: 2px solid #00ffff;
       transition: border 0.2s ease-in-out;
 
 }
 
-.cube-low-hover {
+.hero-section__low-mid p:hover::after {
 
       border-top: 3px solid #ff0956;
       border-right: 3px solid #ff0956;
@@ -470,6 +473,9 @@ main {
       justify-content: center;
       align-items: center;
       max-width: 1400px !important;
+      opacity: 0;
+      transform: translateY(15%);
+      transition: opacity 0.3s ease-in, transform 0.3s ease-in;
 }
 
 .main-section-upper {
