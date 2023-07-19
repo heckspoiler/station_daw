@@ -96,8 +96,10 @@ body {
       margin-right: auto;
       overflow-x: hidden;
       margin-top: 4.3rem;
+}
 
-
+a:hover {
+      cursor: pointer;
 }
 
 html {
@@ -209,8 +211,6 @@ header a:hover {
       align-items: center;
       max-width: 28rem;
       width: 39%;
-
-
 }
 
 .navbar__right a {
@@ -598,6 +598,7 @@ main {
 
       justify-content: flex-end;
       padding-right: 2rem;
+
 }
 
 .img-div-second-section-first {
