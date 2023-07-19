@@ -728,6 +728,7 @@ footer h3 {
       display: flex;
       justify-content: space-between;
       width: 100%;
+      line-height: 30px;
 
 }
 
@@ -766,7 +767,8 @@ footer h3 {
 .footer p,
 footer a {
       font-family: "Futura Light";
-      font-size: 1.2rem;
+      font-size: 20px;
+      line-height: 30px;
 }
 
 footer a:hover {
@@ -805,7 +807,7 @@ footer a::after {
 .footer-lower-content {
       display: inline-flex;
       justify-content: space-between;
-      margin-top: 8vw;
+      margin-top: calc(2rem + 5vw);
       width: 100%;
       flex-wrap: wrap;
 
