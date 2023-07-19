@@ -111,8 +111,8 @@ html {
 header nav {
       position: fixed;
       height: 4.3rem;
-      max-width: 1300px;
       width: 100%;
+      max-width: 1400px !important;
       padding: 1rem 2rem 1rem 2rem;
       display: flex;
       justify-content: space-between;
@@ -672,7 +672,7 @@ main {
 
 footer {
       margin-top: 0;
-      height: 30rem;
+      height: 100vh;
       padding: 6rem;
 }
 
@@ -686,6 +686,43 @@ footer {
 }
 
 
+.footer-information-container {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 8vw;
+}
+
+
+
+
+.footer p,
+footer a {
+      font-family: "Futura Light";
+      font-size: 1.2rem;
+}
+
+footer a::after {
+      content: "";
+      position: absolute;
+      margin-top: 10px;
+      height: 5px;
+      width: 5px;
+      border-right: 1px solid black;
+      border-top: 1px solid black;
+      margin-left: 5px;
+      transform: rotate(45deg);
+}
+
+.social-icons {
+      display: flex;
+      gap: calc(5px + 0.4vw);
+}
+
+.social-icons img {
+      height: 4vw;
+      width: 4vw;
+}
 
 /*  --------- media queries ----------- */
 
