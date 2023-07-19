@@ -685,12 +685,79 @@ footer {
 
 }
 
+footer h3 {
+      font-family: "Futura Medium";
+}
+
+.footer-upper-content {
+      display: inline-flex;
+      justify-content: space-between;
+      margin-top: 8vw;
+      width: 100%;
+      flex-wrap: wrap;
+
+}
+
 
 .footer-information-container {
       display: flex;
       flex-direction: column;
+      justify-content: baseline;
+      align-items: flex-start;
       gap: 14px;
-      margin-top: 8vw;
+      max-width: calc(5rem + 16vw);
+
+}
+
+.footer-information-container:nth-of-type(3) {
+      max-width: calc(5rem + 25vw);
+
+}
+
+.footer-information-container:nth-of-type(6) {
+      max-width: calc(5rem + 25vw);
+
+}
+
+.footer-information-container:nth-of-type(3) p {
+      line-height: 1.5;
+
+}
+
+.email-section {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+}
+
+.email-section input,
+.email-section button {
+      width: 100%;
+      height: 3rem;
+      font-size: 1.2rem;
+
+}
+
+.email-section input {
+      border-radius: none;
+      border: none;
+      background-color: #eeeeee;
+      padding-left: 15px;
+      font-family: "Futura Light"
+}
+
+.email-section button {
+      background-color: #0000ff;
+      color: white;
+      border: none;
+      border-radius: 0px;
+      width: 80%;
+      font-family: "Futura Light"
+}
+
+.email-section button:hover {
+      cursor: pointer;
 }
 
 
@@ -700,6 +767,10 @@ footer {
 footer a {
       font-family: "Futura Light";
       font-size: 1.2rem;
+}
+
+footer a:hover {
+      cursor: pointer;
 }
 
 footer a::after {
@@ -714,15 +785,54 @@ footer a::after {
       transform: rotate(45deg);
 }
 
+
+
 .social-icons {
       display: flex;
       gap: calc(5px + 0.4vw);
 }
 
 .social-icons img {
-      height: 4vw;
-      width: 4vw;
+      height: 3.5vw;
+      width: 3.5vw;
 }
+
+.social-icons img:hover {
+      cursor: pointer;
+}
+
+
+.footer-lower-content {
+      display: inline-flex;
+      justify-content: space-between;
+      margin-top: 8vw;
+      width: 100%;
+      flex-wrap: wrap;
+
+}
+
+
+.footer_dropdown-section {
+      display: flex;
+      gap: 2px;
+
+}
+
+.footer_dropdown-section select {
+      font-family: "Futura Medium";
+      border: none;
+      background-color: #eeeeee;
+      padding: 0.6rem 0.5rem 0.6rem 1rem;
+}
+
+.footer_dropdown-section select:nth-of-type(1) {
+      width: calc(4rem + 5vw);
+}
+
+.footer_dropdown-section select:nth-of-type(2) {
+      width: calc(4rem + 15vw);
+}
+
 
 /*  --------- media queries ----------- */
 
