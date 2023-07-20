@@ -1,17 +1,26 @@
 @media screen and (min-width: 1400px) {
-      body {}
+      body {
+            max-width: 1500px;
+
+      }
+
+      header {
+            width: 100vw;
+
+      }
 
       nav {
-            width: 100vw;
+            width: 100%;
       }
 
       .hero-section {
             margin-top: 4.3rem;
-            width: 100%;
+            width: 100vw;
+
       }
 
       .hero-section__mid-right {
-            margin-left: calc(15rem + 40vw);
+            margin-left: calc(15rem + 35vw);
             scale: 1.2;
       }
 
@@ -30,9 +39,24 @@
             margin-top: 7.3rem;
       }
 
+      .main-sections {
+
+            justify-content: space-around;
+      }
+
+      .main-subsection-lower {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+      }
+
       main {
             margin-top: 10rem;
+
       }
+
 
       footer {
             width: calc(100% + 5rem);
